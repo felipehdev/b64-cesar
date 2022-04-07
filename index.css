@@ -121,12 +121,12 @@ textarea {
     justify-content: space-between;
     width: 390px;
 }
-.code {
+.code-ctn {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.decode {
+.decode-ctn {
     display: flex;
     flex-direction: row;
     align-items: center;

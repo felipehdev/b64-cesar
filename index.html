@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Base64</title>
   </head>
   <body>
@@ -26,9 +26,9 @@
 
         <div class="crypt-opts-ctn">
           <label for="crypts-opt"></label>
-          <select name="crypts" id="crypts" form="form">
-            <option value="base64">Base64</option>
-            <option value="cesar">Cifra de Cesar</option>
+          <select name="crypts" id="crypts" onchange="start" form="form">
+            <option id="base64Crypt" value="base64">Base64</option>
+            <option id="cesarCrypt" value="cesar">Cifra de Cesar</option>
           </select>
           <div class="increment-ctn">
             <p class="increment-p"> > Incremento:</p>
@@ -57,16 +57,16 @@
 
 
         <div class="code-decode-opts">
-          <div class="code">
+          <div class="code-ctn">
             <input type="radio" name="de-code" id="code" value="code" />
             <p class="code-decode-p">Code</p>
           </div>
-          <div class="decode">
+          <div class="decode-ctn">
             <input type="radio" name="de-code" id="decode" value="decode" />
             <p class="code-decode-p">Uncode</p>
           </div>
         </div>
-        <input class="go-btn" type="button" value="GO!" />
+        <input id="goBtn" class="go-btn" type="submit" value="GO!"/>
         <textarea
           name="result"
           id="result"
@@ -85,6 +85,6 @@
       <a href="#">linkedin</a>
     </footer>
 
-    <script src="index.js" autocomplete="off"></script>
+    <script src="./index.js" autocomplete="off"></script>
   </body>
 </html>
