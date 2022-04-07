@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Base64</title>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav>
+      <div class="logo"><h1>de/unCODER</h1></div>
+    </nav>
+
+    <!--content-->
+    <section class="content">
+      <form class="form" id="form">
+        <textarea
+          name="entry"
+          id="entry"
+          cols=""
+          rows=""
+          placeholder=" Escreva ou cole aqui o texto para (de)codificar."
+        ></textarea>
+
+        <div class="crypt-opts-ctn">
+          <label for="crypts-opt"></label>
+          <select name="crypts" id="crypts" form="form">
+            <option value="base64">Base64</option>
+            <option value="cesar">Cifra de Cesar</option>
+          </select>
+          <div class="increment-ctn">
+            <p class="increment-p"> > Incremento:</p>
+            <input class="increment-inp" type="number" name="increment" id="increment" />
+        </div>
+
+
+          <!--
+            <div class="base64">
+            <input type="radio" name="crypto" id="base64" value="base64" />
+            <p class="crypto-nm">Base64</p>
+          </div>
+
+          <div class="ceasar">
+            <input type="radio" name="crypto" id="ceasar" value="ceasar" />
+            <p class="crypto-nm">Cesar</p>
+            <div class="increment-ctn">
+                <p class="increment-p"> > Incremento:</p>
+                <input class="increment-inp" type="number" name="increment" id="increment" />
+            </div>
+          </div>         
+          --> 
+        </div>
+
+        <div class="line"></div>
+
+
+        <div class="code-decode-opts">
+          <div class="code">
+            <input type="radio" name="de-code" id="code" value="code" />
+            <p class="code-decode-p">Code</p>
+          </div>
+          <div class="decode">
+            <input type="radio" name="de-code" id="decode" value="decode" />
+            <p class="code-decode-p">Uncode</p>
+          </div>
+        </div>
+        <input class="go-btn" type="button" value="GO!" />
+        <textarea
+          name="result"
+          id="result"
+          readonly
+          cols=""
+          rows=""
+          placeholder=" Texto (de)codificado."
+        ></textarea>
+      </form>
+    </section>
+
+    <!--footer-->
+
+    <footer>
+      <a href="#">github</a>
+      <a href="#">linkedin</a>
+    </footer>
+
+    <script src="index.js" autocomplete="off"></script>
+  </body>
+</html>
