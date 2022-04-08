@@ -26,13 +26,14 @@
 
         <div class="crypt-opts-ctn">
           <label for="crypts-opt"></label>
-          <select name="crypts" id="crypts" form="form">
-            <option value="base64">Base64</option>
-            <option value="cesar">Cifra de Cesar</option>
+          <select name="crypts" id="crypts" form="form" onchange="cryptoMethod">
+            <option id="selecione" value="selecione"></option>
+            <option id="base64" value="base64">Base64</option>
+            <option id="cesar" value="cesar">Cifra de Cesar</option>
           </select>
           <div class="increment-ctn">
             <p class="increment-p"> > Incremento:</p>
-            <input class="increment-inp" type="number" name="increment" id="increment" />
+            <input class="increment-inp" type="number" name="jump" id="jump" />
         </div>
 
 
@@ -66,15 +67,8 @@
             <p class="code-decode-p">Uncode</p>
           </div>
         </div>
-        <input class="go-btn" type="button" value="GO!" />
-        <textarea
-          name="result"
-          id="result"
-          readonly
-          cols=""
-          rows=""
-          placeholder=" Texto (de)codificado."
-        ></textarea>
+        <input id="go-btn" class="go-btn" type="button" value="GO!" />
+        <p id="result">'Texto (de)codificado'</p>
       </form>
     </section>
 
